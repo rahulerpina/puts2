@@ -53,7 +53,7 @@ class TestCalculator(unittest.TestCase):
 
 		#case 8, when A input is an alphabet(non integer) and B is integer
 		solution = self.app.get('/sub?A=good&B=10')
-		self.assertEqual(b'-10.0', solution.data)#non integer type considered as not valid , in this case which is zero
+		self.assertEqual(b'-10.0', solution.data)#non integer type considered as not valid , which is zero
 
 	def test_sub9(self):
 
